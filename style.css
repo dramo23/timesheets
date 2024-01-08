@@ -1,0 +1,165 @@
+/* TODO: 3. Style the time sheet table */
+
+/* [ ] 3.1 CSS Custom Fonts, general reset and css variables and style the body and project container */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --PP-blue: #1c468a;
+  --PP-gray-blue: #355994;
+  --PP-gray: #a8a8a8;
+  --PP-red: #b92027;
+  --PP-light-gray: #f6f6f6;
+  --dark-green: #0ca614;
+  --light-green: #effbf0;
+  --dark-purple: #6a52ff;
+  --light-purple: #f3f1ff;
+  --dark-orange: #d2781a;
+  --light-orange: #fdf5eb;
+  --dark-blue: #2998ff;
+  --light-blue: #f0f7ff;
+  --dark-red: #cf2e2e;
+  --light-red: #f5efef;
+  --dark-gray: #676b6e;
+  --light-gray: #f6f6f6;
+}
+.blue {
+  background-color: var(--PP-light-gray);
+  color: var(--PP-gray-blue);
+}
+
+.gray-blue {
+  background-color: var(--PP-gray-blue);
+}
+
+.gray {
+    background-color: var(--PP-gray);
+    color: var(--PP-gray-blue);
+  }
+
+.container {
+  width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  padding: 1rem;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  border: 3px solid var(--PP-blue);
+  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.3);
+  background-color: var(--PP-gray-blue);
+}
+
+.title {
+  position: absolute;
+  top: -70px;
+  left: -1px;
+  display: flex;
+  align-items: flex-end;
+  color: var(--PP-blue);
+  font-size: 2.2rem;
+}
+
+.sub-title {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+  font-size: 1.6rem;
+}
+
+section.Name input {
+    position: relative;
+    top: -25px;
+    left: 20px;
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+  width: 300px;
+  margin-top: 1rem;
+  flex-direction: column;
+  }
+
+.week {
+  color: #fff;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+section,
+form {
+  display: flex;
+  gap: 15px;
+}
+section.tableBody {
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+
+input {
+  width: 73px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 0.15rem 0.75rem;
+  text-align: center;
+}
+
+
+.tableHead input {
+  height: 40px;
+  text-align: center;
+}
+
+.tableBody input {
+  text-align: center;
+}
+.tableFooter {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
+}
+
+.gray-long {
+    background-color: var(--PP-gray);
+    color: var(--PP-gray-blue);
+    width:fit-content;
+  }
+
+.btn {
+  background-color: inherit;
+  height: 40px;
+  width: 90px;
+  border: 1px solid #999;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.15rem 0.75rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: var(--PP-gray);
+  color: var(--PP-red);
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.btn-green {
+  background-color: var(--dark-green);
+  color: #eee;
+}
